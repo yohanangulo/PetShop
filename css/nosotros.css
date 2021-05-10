@@ -1,0 +1,68 @@
+
+.group__title{
+    color: #000000;
+}
+
+.our-team{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-team__title{
+    font-family: 'Kaushan Script', cursive;
+    color: #de423a;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.our-team__img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.our-team__txt{
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+    border-bottom: 3px solid #ffffff;
+}
+
+@media screen and (min-width:500px){
+    .our-team__img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .column--33{
+        width: 33%;
+    }
+    .our-team__txt{
+        text-align: center;
+        border-bottom: none;
+    }
+
+    
+
+
+}
+
+@media screen and (min-width:768px){
+    .our-team__img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .our-team__title{
+        margin-bottom: 25px;
+    }
+
+    .group__title{
+        margin-bottom: 70px;
+    }
+}

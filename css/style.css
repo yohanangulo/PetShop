@@ -1,0 +1,433 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #efefef;
+}
+
+/* ------------------------------Estilos basicos------------------------------ */
+
+img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    width: 100%;
+}
+
+/* ------------------------------Estilos header------------------------------ */
+
+.main-header{
+    width: 100%;
+}
+
+.logo{
+    font-size: 1.8em;
+    color: #de423a;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.main-header__contactInfo__phone{
+    background: #de423a;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main-header__contactInfo__address{
+    padding: 10px;
+    margin: 0;
+}
+
+.main-header i{
+    position: relative;
+    right: 5px;
+}
+
+/* ------------------------------Estilos del menu------------------------------ */
+
+.main-nav{
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+
+#btnmenu{
+    display: block;
+    color: white;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon a{
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+
+.social-icon__link{
+    text-decoration: none;
+}
+
+.menu{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,.85);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .1s linear;
+}
+
+.show-menu{
+    height: 196px;
+}
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    background: #de423a;
+}
+.menu__link--select{
+    background: #de423a;
+}
+
+/* ------------------------------Estilos del banner------------------------------ */
+
+.banner{
+    margin-top: -55px;
+    position: relative;
+}
+
+.banner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,.5);
+    z-index: 1000;
+    top: 0;
+}
+
+.banner__img{
+    width: 100%;
+}
+
+.banner__content{
+    color: white;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 90%;
+    z-index: 1500;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/*----------------------------------------- ESTILOS PRINCIPALES -----------------------------------------*/
+
+.group--color .bg-red{
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.bg-red{
+    background: #de432a;
+}
+
+.main__title{
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main__txt{
+    line-height: 1.5;
+}
+
+.column__title{
+    font-size: 1.3em;
+    margin: 30px 0 0px 0;
+}
+
+.main__about__description .column:nth-child(2){
+    padding: 10px;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding: 10px;
+    margin: 20px auto;
+    background: #de432a;
+    color: white;
+    border-radius: 4px;
+}
+
+.group__title{
+    text-align: center;
+    color: #de432a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.today-special .column{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.today-special__img{
+    margin: auto;
+}
+
+.today-special__title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.today-special__price{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #de423a;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    padding: 0 80px;
+}
+
+/*----------------------------------------- ESTILOS DEL FOOTER -----------------------------------------*/
+
+.main-footer{
+    background: #222222;
+    color: white;
+    padding: 20px 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.copy{
+    text-align: center;
+    display: block;
+    margin: 80px auto 10px auto;
+    /* padding: 28px 300px 0 300px; */
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+}
+
+.main-footer i, a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer i{
+    position: relative;
+    right: 5px;
+}
+
+.main-footer .column--25{
+    line-height: 2.3;
+}
+
+
+.main-footer .column--50{
+    line-height: 1.5;
+}
+.main-footer .column--50 h2:nth-child(1){
+    padding-bottom: 14px;
+}
+
+
+/*--------------------------------- ESTILOS RESPONSIVE ---------------------------------*/
+
+@media screen and (min-width:500px){
+
+    
+    .column--50-25{
+        width: 49%;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px){
+    .group--color .bg-red{
+        border-radius: 4px;
+    }
+
+    .logo{
+        color: white;
+    }
+
+    .main-header__contactInfo{
+        text-align: right;
+    }
+
+
+
+    .banner{
+        margin-top: -136px;
+        z-index: -1000;
+    }
+
+    .banner__content{
+        font-size: 2.5em;
+    }
+
+    .main-header__contactInfo__phone{
+        background: none;
+    }
+    
+    .main-header__contactInfo__address{
+        color: white;
+    }
+
+    .column--50{
+        width: 49%;
+    }
+    
+    .column--50-25{
+        width: 49%;
+        overflow: hidden;
+        border-radius: 4px;
+    }
+
+    .column--25{
+        width: 25%;
+    }
+
+    .main-nav{
+        background: rgba(0,0,0, .85);
+    }
+
+    .group{
+        margin-bottom: 50px;
+    }
+
+
+    .today-special .column{
+        background: white;
+    }
+
+    .today-special__price{
+        border-bottom: none;
+        padding-bottom: 10px;
+    }
+
+    .group .container{
+        padding: 0 20px;
+    }
+
+    .main-footer .column--50{
+        padding-right: 100px;
+        line-height: 1.5;
+    }
+
+    .column--50-25{
+        width: 24.5%;
+    }
+
+    .logo,
+    .main-header__contactInfo__address,
+    .main-header__contactInfo__phone{
+        padding: 10px 20px;
+    }
+
+    .banner__content{
+        font-size: 2.5em;
+    }
+
+    #btnmenu{
+        display: none;
+    }
+
+    .menu{
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+
+    .banner{
+        margin-top: -147px;
+    }
+    
+    .banner{
+        margin-bottom: 50px;
+    }
+
+    .container{
+        width: 1100px;
+        padding: 0 20px;
+    }
+
+    .banner{
+        margin-bottom: 50px;
+    }
+    
+    .main-footer{
+        text-align: justify;
+    }
+
+}
